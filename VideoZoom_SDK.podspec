@@ -14,5 +14,9 @@ Pod::Spec.new do |s|
   s.source = { :http => 'https://github.com/phu2810/VideoZoom_SDK/releases/download/1.0.2/lib_1.0.2.zip' }
   s.requires_arc = true
   s.vendored_frameworks =  "lib/ZoomInstantSDK.framework"
+  s.pod_target_xcconfig = {
+    'EXCLUDED_ARCHS[sdk=iphonesimulator*]' => 'arm64'
+  }
+  s.user_target_xcconfig = { 'EXCLUDED_ARCHS[sdk=iphonesimulator*]' => 'arm64' }
 end
 
