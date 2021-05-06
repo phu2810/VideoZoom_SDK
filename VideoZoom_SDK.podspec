@@ -11,7 +11,7 @@ Pod::Spec.new do |s|
   s.author       = { "author" => "nguyenphu2810@gmail.com" }
   s.platform     = :ios, "9.0"
 
-  s.source = { :http => 'https://github.com/zoom/zoom-sdk-ios/releases/download/v5.2.42037.1112/ios-mobilertc-all-5.2.42037.1112-clientlog.zip' }
+  s.source = { :http => 'https://github.com/phu2810/VideoZoom_SDK/raw/master/lib_1.0.2.zip' }
   s.requires_arc = true
   s.vendored_frameworks =  "lib/ZoomInstantSDK.framework"
 end
